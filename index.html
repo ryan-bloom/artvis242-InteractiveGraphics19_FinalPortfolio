@@ -1,0 +1,306 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.collide2d.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="sketch.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-light nav-bar navbar-sticky-top row col-lg-12 col-md-12 col-sm-12 col-xs-12" id="navbar" role="navigation">
+        <button class="nav-button">
+            <a href="#top" class="nav-link">To The Top</a>
+        </button>
+        <button class="nav-button">
+            <a href="#aboutMe" class="nav-link">About Me</a>
+        </button>
+        <button class="nav-button">
+            <a href="#accordionExample" class="nav-link">My Blogs</a>
+        </button>
+        <button class="nav-button">
+            <a href="#myArtPieces" class="nav-link">My Works</a>
+        </button>
+    </nav>
+    <div class="header" id="top">
+        <h1>Spring 2019 Interactive Graphics Portfolio</h1>
+        <h1>~~Ryan Bloom~~</h1>
+    </div>
+
+    <div class="aboutMe" id="aboutMe">
+        <h2>About Me:</h2>
+        <p class="aboutMeParagraph">
+            Hi! My name is Ryan Bloom. I'm a senior at Duke University (sad!) who is majoring in Computer Science with a minor in Visual Arts.  I originally entered college thinking about going pre-med, but quickly changed my mind after taking my first computer science class freshman year.  Since then, I've always thought that I would pursue a career that combines my love for computer science with my passion to help others in the medical field, potentially developing technologies to improve the healthcare system overall.  In addition to this, I have always been passionate about art.  I took art classes all throughout high school, and during my junior year, I made the decision to switch my minor from mathematics to visual arts... one of the best decisions I have ever made.  I love drawing and enjoy painting, and this class really helped me combine my passion for art with my love of computer science as well.  I hope to continue to pursue all of my passions, combining them in any way that I can as I enter the real world next year.  I've learned a lot and really enjoyed this course, and I hope that you enjoy my artwork! 
+        </p>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+        <h2>My Blog Posts:</h2>
+        <div class="card">
+            <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h3>New Media Art Blog Post:</h3>
+                </button>
+            </h5>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                <div class="blog_pics col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <img src="images/blog1pic.JPG" alt="blog post 1 picture" id="blog1pic" width="50%">
+                </div>
+                <br>
+                <p>
+                    What stands out most to me when looking at Carla Gannis’s works is the vibrant color scheme that she uses. Many of her works, including the Midnight Moment (depicted in the link below) and the Garden of Emoji Delights (image 1 below) don’t follow or stick to one specific color pattern or family, as many more traditional artists’ works often do. Instead, Gannis utilizes virtually every color, which can be difficult to do well, but I personally like the way that Gannis does this as it immediately captured my attention. In addition to her color schemes, the subjects of Gannis’s works, especially Garden of Emoji Delights, appeal to a relatively young audience as she incorporates elements of popular culture and the younger generation’s reliance on and fascination with technology into her works. For example, Gannis uses emojis in her work Garden of Emoji Delights, which have only become popular and easily recognizable over the last decade or so due to the texting trends of the younger generation, in order to build and create larger imagery. In the case of this work, she creates images of Eden, Hell, and Earth on three separate panels. This piece was displayed at Kasia Kay Art Projects Gallary in 2014. Gannis’s artwork is some of the most unique art that I have seen and I think that she does a great job of appealing to the new, young generation as well as utilizing new media in her work.
+                    <a href="https://vimeo.com/109645144">Here's a link to the work!</a>
+                </p>
+            </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h3>New Media Art Blog Part 2: </h3>
+                </button>
+            </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                    <div class="blog_pics row">
+                        <div class="col-xl-1 col-lg-1 col-md-0 col-sm-0"></div>
+                            <img src="images/blog2pic1.1.JPG" alt="blog 2 pic 1.1" id="blog2pic1.1" width="50%" class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                            <img src="images/blog2pic1.2.JPG" alt="blog 2 pic 1.2" id="blog2pic1.2" width="50%" class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-xl-1 col-lg-1 col-md-0 col-sm-0"></div>
+                    </div>
+                    <br>
+                    <p>
+                        This piece is very similar to the new media art piece that I analyzed in my first blog post. Carla Gannis created this piece as well, and you can see her bold colors and style in this piece as well as in the first piece that I anlayzed. Additionally, her "Portraits in Landscape", Gannis creates and builds the image of a woman using emojis and other smaller symbols, similarly to how she created her "Garden of Emoji Delights". One thing that drew me to this piece is the depiction of a woman apparently holding and looking at a phone. This relates to the younger generation's obsession with and reliance on technology. Furthermore, this piece was displayed in August 2018 throughout Time Square in New York. The imagery was shown on screens throughout the area. Therefore, the woman in Gannis's work appears to be interacting with and either filming or taking photos of the locals and tourists, many of whom are creating a mirror image, taking pictures right back of the screens and Gannis's work.
+                        <a href="https://vimeo.com/273016527">Here's a link to the work!</a>
+                    </p>
+                    <br>
+
+                    <div class="blog_pics">
+                        <img src="images/blog2pic2.1.jpg" alt="blog 2 pic 2.1" id="blog2pic2.1" width="50%" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                        <img src="images/blog2pic2.2.jpeg" alt="blog 2 pic 2.2" id="blog2pic2.2" width="50%" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                        <img src="images/blog2pic2.3.jpg" alt="blog 2 pic 2.3" id="barg2pic2.3" width="50%" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    </div>
+                    <br>
+                    <p>
+                        Amorales's piece is very different from the previous work that I analyzed. This piece, unlike Gannis's, is all black and does not contain the vibrant eye catching colors that Gannis's do. Additionally, Amorales's piece is displayed in a static environment, while Gannis's are ever changing and in motion. "Black Cloud" caught my eye because of the vastness and confussion that I felt upon first seeing the title and images of the display. On first glance, it looks to be a bunch of black dots forming a massive cloud. However, upon closer investigation, you can clearly see that each of the "black dots" is actually a cutout of a butterfly. This piece was inspired by the migration of monarch butterflies from Canada to Mexico and is displayed throughout entire museums and rooms. The viewers are essentially engulfed by the butterflies, the way that Amorales felt when observing this migration. Amorales does a great job of turning butterflies, a widely appreciated and liked animal, into a more unsettling piece of artwork.
+                        <a href="https://www.youtube.com/watch?v=sjw8_v_dvlg&feature=youtu.be">Here's a link to the work!</a>
+                    </p>
+            </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <h3>My First Sketch Blog Post:</h3>
+                </button>
+            </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+                <div class="blog_pics row">
+                    <div class="col-xl-2 col-lg-2 col-md-0 col-sm-0"></div>
+                    <img src="images/blog3pic1.JPG" alt="blog 3 pic 1" id="blog3pic1" width="50%" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12" height="75%">
+                    <img src="images/blog3pic2.JPG" alt="blog 3 pic 2" id="blog3pic2" width="50%" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12" height="75%">
+                    <div class="col-xl-2 col-lg-2 col-md-0 col-sm-0"></div>
+                </div>
+                <p>
+                    For my first sketch, I decided to create a skiing scene because it is one of, if not my favorite thing to do in the world. It is really meant for anyone who is interested in skiing or sports at all, but honestly it does not say as much as I would like it to say about skiing overall. Instead of engendering some emotions and feelings that one experiences while skiing, my first sketch simpley depicts a landscape of a skiing scene. The colors that I originally selected, blues, whites, and grays, do capture some of the cold, snowy vibes that are associated with skiing, but then I decided to abstract these colors in order to give the viewer some interactive power with my piece. The juxtaposition of the simple, cool blues and grays, with the vibrant yellows, reds, and blues that I added to the mountains do give a sense of excitement that can be associated with skiing. However, in my next sketch, I am definitely going to try to expand on the idea of skiing in order to give the veiwer more of a feel of what it is like to be on a mountain. I will try to engender the exhileration and free feeling one has as they fly down the side of a mountain through fluffy powdery snow. In order to do this, I plan on abstracting my work further, which is something that I am definitely not very comfortable with at the moment. I want to portray less of a landscape scene that can immediately be recognized as a ski mountain, but instead portray more of an abstract work that plays off some of the feelings one gets when skiing.
+                </p>    
+                <p>
+                    The three videos that I watched demonstrate three artists and their approach to their art. One of the artists, Hillary Lloyd, has an interesting take on art, stating that it might not be understandable, but thats okay. I find this take very interesting and different from any idea that I've had before, and moving forward, I would like to try to incorporate this idea into my work, despite thke fact that my first instinct is not very comfortable with the idea. I think that throughout this class, I will try to force myself to become more comfortable with abstract art, which will be difficult because I have always been more of a realism artist in my past. I'm excited to experiment and expand into this new artform and new method of creating art. My work, at the moment, does not match with these artists styles, but I am going to try to become more abstract in my works.
+                    <a href="https://ryanab702.github.io/mySketch1/">Here's a link to my work!</a>
+                </p>
+            </div>
+            </div>
+        </div>
+
+        <div class="card">
+                <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <h3>Algorithm Art Blog Post:</h3>
+                    </button>
+                </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="blog_pics">
+                        <img src="images/blog4pic1.1.jpg" alt="blog 4 pic 1.1" id="blog4pic1.1" width="50%" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                        <img src="images/blog4pic1.2.jpg" alt="blog 4 pic 1.2" id="blog4pic1.2" width="50%" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">                        
+                        <img src="images/blog4pic1.3.jpg" alt="blog 4 pic 1.3" id="barg4pic1.3" width="50%" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    </div>
+                    <p>
+                        This piece of art is really interesting to me becuase it its use of audio and visuals. Users are expected to sing, and their vocals are then run through a certain software that distorts them and creates these beautiful images to express the users' voices. I find this to be an extremely interesting and unique way to have a user interract with a work of art. What drew me to this work was the way in which users are expected to interact with the work as well as the wide variety of visual outcomes that are produced by the work. For example, one can see in the images above that the visualizations of users' voices range from black and white shapes to vibrant and glowing colors. The use of software to analyze, manipulate, and create these beautiful pieces is fascinating to me. <a href="https://www.youtube.com/watch?v=STRMcmj-gHc">Here's a link to the work!</a>
+                    </p>
+                    <br>
+                    <div class="blog_pics row">
+                        <div class="col-xl-2 col-lg-2 col-md-0 col-sm-0"></div>
+                        <img src="images/blog4pic2.1.jpg" alt="blog 4 pic 2.1" id="blog4pic2.1" width="50%" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12" height="75%">
+                        <img src="images/blog4pic2.2.jpg" alt="blog 4 pic 2.2" id="blog4pic2.2" width="50%" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12" height="75%">
+                        <div class="col-xl-2 col-lg-2 col-md-0 col-sm-0"></div>
+                    </div>
+                    <p>
+                            This artwork is vastly different from the algorithmic pieces that we observed in class as well as the first piece that I analyzed in this blog. This work is far less technical and digital, and far closer to classic works of art such as paintings and drawings. I the fact that this piece combined the use of algorithms as well as the more classic forms of art is what drew me to this piece, as I have always been more of a classical artist/drawer myself. Although this piece does resembel more classic works due to the fact that it is physically apply some material to a canvas, the materials used (in this case, gun powder, thermochromatic pigment, and beet-dyed pigment), as well as the way in which the materials were applied to said canvas are extremely unique. Addie manages to bring this piece into the modern era by applying these materials using drone aircrafts to spread them across the canvas. It is through these aircrafts that various algorithms are applied (such as the algorithm that makes the drone land, take off, and barrel roll) to this work, putting a new spin on algorithmic art when compared to some of the virutally generated works that we saw in class. Finally, users do not fully interract with these works, but some of the materials used, such as thermochromatic pigment, are heat sensative and change in color with changing environment. Therefore, one work is never the same due to environmental changes, and users can alter pieces by tampering with its surroundings. <a href="https://vimeopro.com/bitforms/wagenknecht/video/135071736">Here's a link to the work!</a> 
+                    </p>
+                </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <h3>Data Visualization Blog Post:</h3>
+                    </button>
+                </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="blog_pics row">
+                        <div class="col-xl-2 col-lg-2 col-md-0 col-sm-0"></div>
+                        <img src="images/blog5pic1.1.jpg" alt="blog 5 pic 1.1" id="blog5pic1.1" width="100%" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12" height="75%">
+                        <img src="images/blog5pic1.2.jpg" alt="blog 5 pic 1.2" id="blog5pic1.2" width="100%" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12" height="75%">
+                        <div class="col-xl-2 col-lg-2 col-md-0 col-sm-0"></div>
+                    </div>
+                    <p>
+                        This piece, entitled "We Were Strangers Once Too" and found through The Office for Creative Research, really caught my eye when I was looking for data visualization art pieces. It originally stood out to me because of its physical, real world nature. Prior to seeing this work, at least in my mind, I thought of most data visualization pieces as existing in the digital world or online. I never really realized that data visualization pieces of artwork could exist in the physical world as well. That is why I originally looked into this piece. This visualization sculpture was displayed in the winter of 2017 in Time Square in New York City as a statement towards the way in which immigrant populations have shaped NYC.
+                    </P>
+                    <p>
+                         After looking deeper into this work and reading about its purpose and the data that it does visualize, I enjoy and appreciate the piece even more. Although relatively simple as compared to various other works with respect to the types and range of data being visualized, this piece makes an extremely strong statement. It consists of 33 metal poles with the counts of NYC immigration populations from various nations. The larger the immigration population is from a specific nation, the larger that nation's patch of pink on a pole is. This correlation is found in many data visualization works, and I will work to implement this connection between visual size and data size as well. Although the physical nature of this sculpture inhibits viewrs' interaction with the actual display of the piece, it does allow a different kind of interaction with its viewers. The piece was open to the public and people were able to walk around and through the poles, physically interacting with them and further understanding the importance of, and vast presence, immigration in New York City. <a href = "https://ocr.nyc/public-space-interventions/2017/01/09/we-were-strangers-once-too/">Here's a link to the piece!</a>
+                    </p>
+                    <br>
+                    <div class="blog_pics row">
+                        <div class="col-xl-2 col-lg-2 col-md-0 col-sm-0"></div>
+                        <img src="images/blog5pic2.1.jpg" alt="blog 5 pic 2.1" id="blog5pic2.1" width="100%" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12" height="75%">
+                        <img src="images/blog5pic2.2.jpg" alt="blog 5 pic 2.2" id="blog5pic2.2" width="100%" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12" height="75%">
+                        <div class="col-xl-2 col-lg-2 col-md-0 col-sm-0"></div>
+                    </div>
+                    <p>
+                            This second piece of artwork, created by Jer Thorp and entitled "Data in an Alien Context: Kepler Visualization," caught my eye for a different reason than the artwork discussed above. This piece portrays bright and vibrant colors on a black background, which allows these shapes and colors to truly pop off the screen. Furthermore, the massive quantity of data points in thiis piece made me curious about what they represented, and how their colors and sizes were determined. This piece was created and released in 2012.
+                        </p>
+        
+                        <p>
+                            Upon further research, it was found that this piece of work represents data regarding the 2327 exoplanets identified by NASA. It is fascinating how many different data categories Jer Thorp was able to visualize as well as the ways that he did so. The sizes of each data point were selected based on the planet radius where larger dots represent exoplanets with greater radii. Then, the colors of the data points vary based on temperature, from red hot to cool blue. Furthermore, users can interact with this piece zooming in and out, as well as displaying the points on different graphs (both radial and linear) representing various data categories ranging from size, to temperature, to astronomical units. The user interaction with this piece, as well as the range of data represented, really differentiates it from the work discussed above. Moving forward, I hope to be able to display a wide range of data categories in unique and interesting ways in my visualization piece as well.<a href="https://vimeo.com/19642643">Here's a link to the work...</a> <a href="https://www.ktbyte.com/projects/project/97221/kepler-exoplanets-visualization"> and here's another!</a>
+                    </p>
+
+                </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingSix">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <h3>Motion Tracking Blog Post:</h3>
+                    </button>
+                </h5>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="blog_pics row">
+                        <img src="images/blog6pic1.1.jpg" alt="blog 6 pic 1.1" id="blog6pic1.1" width="50%" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                        <img src="images/blog6pic1.2.jpg" alt="blog 6 pic 1.2" id="blog6pic1.2" width="50%" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">                        
+                        <img src="images/blog6pic1.3.jpg" alt="blog 6 pic 1.3" id="barg6pic1.3" width="50%" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    </div>
+                    <p>
+                        The piece that I found is less of a static art piece and more of a performance. I spent time searching for artworks that used real-time motion tracking technology and this piece really captured my attention. When I was watching and looking through some of the other pieces that I came across, which involved some dance routines and projections of light that followed those routines, it was difficult to determine whether or not the light show was static and the dancers choreographed their routine the match the show, or if the lights were actually reacting to the dancers themselves. This piece, however, is very clearly using motion tracking to trace the paths of the pins being juggled. The group of jugglers, known as Jonglissimo, have been studying and perfecting new ways to portray the art form of juggling, and have recently begin using real time motion tracking to do so. The performance linked bellow was performed at a TEDxLinz event in 2018.
+                    </p>
+                    <p>
+                        In their routine, not only are the paths of the bowling pins tracked, but the rotation and speed of each pin is tracked as well, leaving an incredible display of art/lights on the blank canvas (wall) behind the performers. What really stood out to me here, other than the skill of the performers, was the different types of motion tracking techniques that were used. For example, during some parts of the performance, the tracks of the pins left a stagnant print on the wall behind the performers, while at other points in the performance, the pins' paths faded fast or even moved across or up or down the wall after being tracked. I believe that this is done by changing the back end code that creates the tracking of the pins, some of the code leaves static markings while other parts of the code lead to the motion that is seen around the 1:50 mark of the video linked below. The constant changin of colors adds to the entire aesthetic experience as well.
+                    </p>
+                    <p>
+                        This is the type of motion tracking art that really impresses and captures my attention because of the aesthetics that it creates as well as the performance that must be put on (live) in order to create such aesthetics. While other artists' works allow the commoner (non-juggler) to interract with it in new and cool ways, such as Daniel Rozin's mirror works, I am drawn to the exciting colors and vibrant performances of groups like Jonglissimo. I will use this work to inspire my own, as I hope to be able to create some sort of motion tracking piece of artwork that allows users to interract with it by tracking their motion and leaving a subsequent trail or image on some sort of canvas that represents the motion that has been tracked. This print might be stagnant or fading, but it will hopefully use the users' body to fill a canvas with color. <a href ="https://www.youtube.com/watch?v=Zm_oy1m-g3k">Here's a link to the piece!</a>
+                    </p>
+                    <br>
+                    <div class="blog_pics row">
+                        <div class="col-xl-2 col-lg-2 col-md-0 col-sm-0"></div>
+                        <img src="images/blog6pic2.1.jpg" alt="blog 6 pic 2.1" id="blog6pic2.1" width="100%" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12" height="75%">
+                        <img src="images/blog6pic2.2.jpg" alt="blog 6 pic 2.2" id="blog6pic2.2" width="100%" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12" height="75%">
+                        <div class="col-xl-2 col-lg-2 col-md-0 col-sm-0"></div>
+                    </div>
+                    <p>
+                        This piece of art was created by German digital artist Tobias Gremmler. He chose to portray the Chinese martial art form in a digital sculpture that tracks the martial artist's movement. His goal was to turn movement into structure and volume, which he successfuly does in this work. Gremmler uses several variations of motion tracking to create a bunch of visualizations, from the building of dense structures, to the bursts of particles, Gremmler portrays the motion of the individual in a ton of interesting and new ways. This piece uses a lot less color than does the piece I described above, but depicts a beautiful portrayl of the martial artist's movements (while using sound effects to add to the experience). Gremmler demonstrates the physics behind martial arts through the use of his visualization while creating a stunning image at the same time. This type of motion tracking is similar to what I plan on using to extend one of my projects because I believe that I want to use a person's motions to move some objects on my screen as well. <a href="https://www.thisiscolossal.com/2016/05/kung-fu-visualizations/">Here's a link to the work!</a>
+                    </p>
+                </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="myWorks" id="myArtPieces">
+        <h2>My Portfolio:</h2>
+        <div class="first_projects row">
+            <div class="col-xl-1 col-lg-1 col-md-0 col-sm-0"></div>
+            <div class="hello_world_project_box col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                <h2 class="imageTitle">My First Sketch:</h2>
+                <a href="https://ryanab702.github.io/mySketch1/">
+                    <img src="images/hello_world_pic1.JPG" alt="my First Sketch" width="90%" class="imgLink">
+                </a>
+            </div>
+            <div class="space col-lg-2"></div>
+            <div class="hello_world_rework_box col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                <h2 class="imageTitle">My First Sketch Rework:</h2>
+                <a href="https://ryanab702.github.io/hello_world_sketch_rework/">
+                    <img src="images/hello_world_rework.JPG" alt="My First Sketch Rework" width="90%" class="imgLink">
+                </a>
+            </div>
+            <div class="col-xl-1 col-lg-1 col-md-0 col-sm-0"></div>
+        </div>
+        
+        <br>
+
+        <div class="algorithm_project row">
+                <div class="space col-xl-1 col-lg-1 col-md-0 col-sm-0 col-xs-0"></div>
+            <div class="algorithm_art_box col-xl-10 col-lg-10 col-md-12 col-sm-12">
+                <h2 class="imageTitle">My Algorithm Artwork:</h2>
+                <a href="https://ryanab702.github.io/AlgArt/">
+                    <img src="images/alg_art_pic.JPG" alt="My Algorithm Artwork" width="100%" class="imgLink">
+                </a>
+            </div>
+            <div class="space col-xl-1 col-lg-1 col-md-0 col-sm-0 col-xs-0"></div>
+        </div>
+        <br>
+        <div class="data_visualization row">
+            <div class="space col-xl-1 col-lg-1 col-md-0 col-sm-0 col-xs-0"></div>
+            <div class="data_visualization_box col-xl-10 col-lg-10 col-md-12 col-sm-12">
+                <h2 class="imageTitle">My Data Visualization:</h2>
+                <a href = "https://ryanab702.github.io/DataVisualization/">
+                    <img src="images/data_vis_pic.JPG" alt="My Data Visualization" width="100%" class="imgLink">
+                </a>
+            </div>
+            <div class="space col-xl-1 col-lg-1 col-md-0 col-sm-0 col-xs-0"></div>
+        </div>
+        <div class="final_project row">
+            <div class="space col-xl-1 col-lg-1 col-md-0 col-sm-0 col-xs-0"></div>
+            <div class="final_project_box col-xl-10 col-lg-10 col-md-12 col-sm-12">
+                <h2 class="imageTitle">My Final Project:</h2>
+                <a href = "https://ryanab702.github.io/MotionTrackingFinalProject/">
+                    <img src="images/final_project_pic_2.JPG" alt="My Final Project" width="100%" class="imgLink">
+                </a>
+            </div>
+            <div class="space col-xl-1 col-lg-1 col-md-0 col-sm-0 col-xs-0"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="https://github.com/ryanAB702">
+            <p class="github">
+                Here's a link to my github page!
+            </p>
+        </a>
+    </div>
+</body>
+</html>
